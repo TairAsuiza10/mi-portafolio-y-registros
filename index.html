@@ -3,81 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Tair Sangama</title>
+    <title>Portafolio - Tair Sangama</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<body id="inicio">
 
-    <!-- HEADER -->
+    <!-- ===== HEADER ===== -->
     <header>
-        <div class="logo">Tair Sangama</div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="navbar">
+    <div class="logo">Tair</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#curriculum">Currículum</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- SECCIÓN INICIO -->
-    <section id="inicio">
-        <h1>¡Hola! Soy Tair Sangama</h1>
-        <p>Desarrollador de software con pasión por crear soluciones creativas y funcionales.</p>
-        <a href="#proyectos" class="btn">Ver mis proyectos</a>
-    </section>
+    <!-- ===== PRESENTACIÓN ===== -->
+<!-- Sección de presentación -->
+<section class="presentacion" id="inicio">
+  <div class="presentacion-texto">
+    <h1>Hola, soy <span>Tair Sangama</span></h1>
+    <p>Desarrollador en formación, apasionado por la tecnología y el diseño web.</p>
+    <a href="#proyectos" class="btn">Ver mis proyectos</a>
+  </div>
+  <div class="presentacion-foto">
+    <img src="img/WhatsApp Image 2025-08-12 at 1.25.11 AM.jpeg" alt="Foto de Tair">
+  </div>
+</section>
+    
 
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy estudiante de Ingeniería de Software con IA, apasionado por la programación y el diseño web. 
-        Me gusta crear proyectos que aporten valor y sean fáciles de usar.</p>
-    </section>
+    <!-- ===== SOBRE MÍ ===== -->
+<section id="sobre-mi" class="sobre-mi">
+    <div class="container">
+        <h2 class="titulo-seccion">Sobre mí</h2>
+        <p class="descripcion">
+            Soy estudiante de <strong>Ingeniería de Software con Inteligencia Artificial</strong>, apasionada por la tecnología,
+            la programación y el desarrollo de soluciones creativas.  
+            En este portafolio encontrarás una recopilación de mis proyectos, desde ejercicios académicos 
+            hasta trabajos más personales.
+        </p>
+        <p class="descripcion">
+            Mi objetivo es seguir aprendiendo, mejorar mis habilidades y aportar ideas innovadoras que generen un impacto positivo.
+            Este espacio es mi carta de presentación para que puedas conocer no solo lo que hago, sino también cómo pienso y creo.
+        </p>
+    </div>
+</section>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto.</p>
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades" class="skills-section">
+        <div class="container">
+            <h2>💡 Habilidades</h2>
+            <div class="skills-container">
+                
+                <div class="skill-card">
+                    <img src="img/HTML.png" alt="HTML">
+                    <h3>HTML</h3>
+                    <div class="progress-bar"><span style="width: 90%"></span></div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/CSS.png" alt="CSS">
+                    <h3>CSS</h3>
+                    <div class="progress-bar"><span style="width: 85%"></span></div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/JAVA.png" alt="Java">
+                    <h3>Java</h3>
+                    <div class="progress-bar"><span style="width: 80%"></span></div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/PYTHON.png" alt="Python">
+                    <h3>Python</h3>
+                    <div class="progress-bar"><span style="width: 75%"></span></div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/BASE DE DATOS.png" alt="Base de Datos">
+                    <h3>Base de Datos</h3>
+                    <div class="progress-bar"><span style="width: 70%"></span></div>
+                </div>
+
+            </div>
         </div>
-        <div class="proyecto">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto.</p>
+    </section>
+
+    <!-- ===== CURRÍCULUM ===== -->
+    <section id="curriculum" class="curriculum">
+        <div class="container">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item">
+                        <h4>Primaria y Secundaria</h4>
+                        <span class="casa">TNT. César Augusto López Rojas</span>
+                        <span class="fecha">2013 - 2023</span>
+                        <p>Formación escolar con participación en actividades académicas y extracurriculares.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Ingeniería de Software con IA</h4>
+                        <span class="casa">SENATI</span>
+                        <span class="fecha">2024 - 2026</span>
+                        <p>Formación en desarrollo de software, IA, seguridad informática y soluciones escalables.</p>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item">
+                        <h4>Asistente de ventas</h4>
+                        <span class="casa">Electronic SAC</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Atención al cliente, gestión de inventario y apoyo en ventas tecnológicas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java</li>
-            <li>Git y GitHub</li>
-        </ul>
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="grid-proyectos">
+                <div class="proyecto">
+                    <h3>QoriPerú</h3>
+                    <p>Página web sobre cultura y turismo en Perú.</p>
+                    
+                     <a href="https://proyectofinaldetair-87.on.drv.tw/ProyectoFinal-P%C3%A1ginaWEB/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Conversor de temperatura</h3>
+                    <p>Aplicación en Python para convertir Celsius, Fahrenheit y Kelvin.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Calculadora en Python</h3>
+                    <p>Calculadora con operaciones básicas para uso educativo.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Juegos en Greenfoot (Java)</h3>
+                    <p>Carrera de autos y juego de la serpiente.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Animaciones en Alice 3</h3>
+                    <p>Escenas interactivas con condicionales y objetos animados.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
+    <!-- ===== CONTACTO ===== -->
+<section id="contacto" class="contacto">
+    <div class="container">
         <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Tu mensaje" required></textarea>
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="correo" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Tair Sangama | Todos los derechos reservados</p>
-        <div class="redes">
-            <a href="https://www.facebook.com/tuusuario" target="_blank">Facebook</a>
-            <a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
+        <div class="info-contacto">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Av. Guardia Civil 20104</li>
+                <li><i class="fa-solid fa-mobile-screen"></i> +51 925 245 758</li>
+                <li><i class="fa-solid fa-envelope"></i> 
+                    <a href="mailto:tairsangama@gmail.com">tairsangama@gmail.com</a>
+                </li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</section>
 
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <a href="#inicio" class="arriba" title="Volver arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <div class="redes">
+        <a href="https://www.facebook.com/tair.sangama" target="_blank" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/TairAsuiza10" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/tair.sangama" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <p>© 2025 Tair Sangama - Portafolio<i class="fa-solid fa-heart" style="color: #e63946;"></i></p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
